@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .buttons {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .telegram {
+            height: 80px;
+            width: 80px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .instagram {
+            height: 80px;
+            width: 80px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+
+        i {
+            transition: all 0.5s;
+        }
+
+        .instagram:hover {
+            background-color: purple;
+        }
+        /*> sembolü, CSS'te bir yavru öğeyi (child element) seçmek için kullanılan bir seçici işareti veya seçici operatördür.
+        yalnızca bir öğenin doğrudan alt öğelerini seçmek için kullanılır.*/
+        .instagram a:hover>i {
+            /*transform özelliği, öğenin boyutunu, dönüşünü, eğimini veya konumunu değiştirmek için kullanılır. scale(1.6) ifadesi, öğenin boyutunu 1.6 katına çıkarır. rotate(360deg) ifadesi ise, öğenin 360 derece (bir tam dönüş) etrafında döndürülmesini sağlar.*/
+            transform: scale(1.6) rotate(360deg);
+        }
+
+        .telegram:hover {
+            background-color: rgb(44, 112, 238);
+        }
+
+        .telegram a:hover>i {
+            transform: scale(1.6) rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="buttons">
+        <div class="telegram">
+            <a href="https://t.me/kodadicodes" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/kodadicodes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
